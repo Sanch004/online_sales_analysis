@@ -10,11 +10,11 @@ class ProductManager:
 
     def display_products(self):
         for product in self.products:
-            print(product.product_info())
+            product.product_info()
 
     def total_value(self):
         value = 0
         for product in self.products:
             value += product.price * product.quantity
-            return value
+        return print(value)
 
