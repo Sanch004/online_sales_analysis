@@ -18,3 +18,7 @@ class ProductManager:
             value += product.price * product.quantity
         return print(value)
 
+    def remove_product(self, name):
+        for product in self.products:
+            if product.name == name:
+                self.products.remove(product)
